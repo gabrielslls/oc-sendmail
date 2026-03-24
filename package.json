@@ -1,0 +1,39 @@
+{
+  "name": "oc-sendmail",
+  "version": "1.1.0",
+  "description": "OpenCode MCP 邮件发送工具，基于 Model Context Protocol (MCP) 的 SMTP 邮件发送助手",
+  "main": "mcp-server.js",
+  "bin": {
+    "oc-sendmail": "./send-mail.js"
+  },
+  "scripts": {
+    "start": "node mcp-server.js",
+    "test": "node send-mail.js",
+    "test:send": "node send-mail.js recipient@example.com 'Test Subject' 'Test content'",
+    "test:attachments": "node test-attachments.js"
+  },
+  "keywords": [
+    "opencode",
+    "mcp",
+    "email",
+    "smtp",
+    "nodemailer",
+    "mcp-server",
+    "markdown-email"
+  ],
+  "author": "Gabriel",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrielslls/oc-sendmail.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "dotenv": "^17.3.1",
+    "marked": "^17.0.4",
+    "nodemailer": "^8.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

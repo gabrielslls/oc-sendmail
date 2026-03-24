@@ -1,0 +1,25 @@
+# 敏感配置
+.env
+
+# 依赖
+node_modules/
+
+# 日志
+*.log
+.setting/
+
+# 开发工具
+.sisyphus/
+.mcp_data/
+
+# 编辑器
+.vscode/
+.idea/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 无关文件
+words_final_valid.txt
+luna_pinyin.sogou.dict.yaml
